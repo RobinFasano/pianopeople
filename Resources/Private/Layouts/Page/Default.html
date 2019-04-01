@@ -1,0 +1,43 @@
+<nav class="white z-depth-0 aniview slow nav-extended nav-center" data-av-animation="fadeIn">
+  <div class="nav-content">
+    <a href="/" class="brand-logo"><img class="logo-small" src="/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/logo_pianopeople.png" alt=""></a>
+    <a href="/" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons black-text">menu</i></a>
+  </div>
+    <div class="nav-wrapper containerwhite black-text">
+      <div class="">
+        <ul id="nav-mobile" class=" hide-on-med-and-down list-inline">
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <li class="{f:if(condition: mainnavigationItem.active, then:'active')} ">
+                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                {mainnavigationItem.title}
+            </a>
+                    <f:if condition="{mainnavigationItem.children}">
+                        <ul>
+                            <f:for each="{mainnavigationItem.children}" as="child">
+                                <li class="{f:if(condition: child.active, then:'active')}">
+                                    <a href="{child.link}" target="{child.target}" title="{child.title}">
+                                {child.title}
+                            </a>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+        </div>
+    </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+      <f:for each="{mainnavigation}" as="mainnavigationItem">
+          <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
+            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                {mainnavigationItem.title}
+            </a>
+          </li>
+      </f:for>
+    </ul>
+<main>
+
+<f:render section="Main" />
+<f:render partial="Footer" />

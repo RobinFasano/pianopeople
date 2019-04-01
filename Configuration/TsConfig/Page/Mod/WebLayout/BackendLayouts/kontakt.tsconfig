@@ -1,0 +1,26 @@
+mod.web_layout.BackendLayouts {
+  kontakt {
+    title = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.kontakt
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 2
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+              name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.rechts
+              colPos = 0
+              }
+              2 {
+              name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.links
+              colPos = 1
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

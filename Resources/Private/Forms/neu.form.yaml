@@ -1,0 +1,34 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: neu
+label: neu
+prototypeName: standard
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: 'Email address'
+        validators:
+          -
+            identifier: EmailAddress
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Textarea

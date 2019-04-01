@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-03-18UTC08:02:280">
+        <header>
+            <authorName>Robin Fasano</authorName>
+            <authorEmail>robinfasano@hotmail.com</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="backend_layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.test">
+                <source>Test</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.normal">
+                <source>Normal</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.medien">
+                <source>Medien</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.titel">
+                <source>Titel</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.inhalt">
+                <source>Inhalt</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.kontakt">
+                <source>Kontakt</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.rechts">
+                <source>Rechts</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.column.links">
+                <source>Links</source>
+            </trans-unit>
+            <trans-unit id="backend_layout.about">
+                <source>About</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
