@@ -35,9 +35,9 @@ body {
  }
  h1, h2{
    font-family: 'Arapey', serif;
-   font-size: 70px;
+   font-size: 90px;
  }
- h3{
+ header h3{
    font-family: 'Arapey', serif;
    font-size: 40px;
  }
@@ -67,8 +67,8 @@ nav ul li.active {
   height: 60px;
   margin-top: 38px;
 }
-.brand-logo{
-  margin: 10px;
+.custom-brand-logo{
+
 }
 
 .parallax-img {
@@ -161,10 +161,10 @@ nav{
   margin-bottom: 50px;
   text-transform: lowercase;
   color: #343435;
-  font-size: 60px;
 }
 .media{
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: ;
 }
 
@@ -173,7 +173,10 @@ nav{
   top: 0;
   left: 0;
 
-  /* Preserve aspet ratio */
+  /* Preserve aspet ratio
+  min-width: 100%;
+  max-height: auto;
+  */
   min-width: 100%;
   min-height: 100%;
 }
@@ -193,7 +196,7 @@ nav{
 }
 
 nav.nav-extended .nav-content {
-  height: 120px !important;
+  height: px !important;
   text-align: center;
 }
 nav.nav-center ul {
@@ -283,7 +286,56 @@ a.button2:active{
   background-color: white; /* Green */
   color: #343435;
 }
-
-.test-title{
-  border-bottom: 0.01em solid #343435;
+@media only screen and (max-width: 992px) {
+  nav.custom-brand-logo{
+      position: absolute;
+      color: #fff;
+      display: inline-block;
+      font-size: 2.1rem;
+      padding: 0;
+    }
+     .nav-wrapper {
+    min-height: 0px !important;
+    height: auto;
+}
+}
+@media only screen and (max-width: 809px) {
+  h1,h2{
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 572px) {
+  h1,h2{
+    font-size: 50px;
+  }
+  header h3{
+    font-family: 'Arapey', serif;
+    font-size: 30px;
+  }
+  .title{
+    margin-top:50px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    color: #343435;
+  }
+  .aboutimg{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  h1,h2{
+    font-size: 35px;
+  }
+  header h3{
+    font-family: 'Arapey', serif;
+    font-size: 25px;
+  }
+  .title{
+    margin-left: 30px;
+    margin-top:40px;
+    margin-bottom: 20px;
+    text-transform: lowercase;
+    color: #343435;
+  }
 }

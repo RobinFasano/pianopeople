@@ -6,7 +6,10 @@
     <h1>{data.title}</h1>
   </div>
 </div>
-<f:cObject typoscriptObjectPath="lib.header"/>
-<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+<div class="container">
+  <div class="aniview animated slow" data-av-animation="fadeInUp">
+  <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+</div>
+</div>
 </main>
 </f:section>

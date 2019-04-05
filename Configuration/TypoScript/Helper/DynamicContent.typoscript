@@ -87,7 +87,7 @@ lib.map {
 
 lib.header = CONTENT
 lib.header {
-  renderObj.stdWrap.wrap = <div class="aniview fast" data-av-animation="slideInUp"><div class="media">|</div></div>
+  renderObj.stdWrap.wrap = <div class="aniview animated slow" data-av-animation="fadeInUp"><div class="media">|</div></div>
   table = tt_content
   select {
     field = header
@@ -103,7 +103,7 @@ lib.headerimage {
     treatIdAsReference = 1
     import.listNum = 0
   }
-  params = id="bg"
+  params = id="bg" 
 }
 
 lib.aboutImg = IMAGE
