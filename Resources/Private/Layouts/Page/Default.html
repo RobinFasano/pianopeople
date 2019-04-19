@@ -1,13 +1,13 @@
 <nav class="white z-depth-0 aniview slow nav-extended nav-center" data-av-animation="fadeIn">
-  <div class="nav-content">
-    <a href="/" class="custom-brand-logo"><img class="logo-small" src="/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/logo_pianopeople.png" alt=""></a>
-    <a href="/" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons black-text">menu</i></a>
+  <div class="nav-content center">
+    <f:link.page pageUid="4"><img class="logo-small" src="/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/logo_pianopeople.png" alt=""></f:link.page>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger "><i class="material-icons black-text">menu</i></a>
   </div>
-    <div class="nav-wrapper  black-text">
+    <div class="nav-wrapper black-text">
         <ul id="nav-mobile" class=" hide-on-med-and-down list-inline">
             <f:for each="{mainnavigation}" as="mainnavigationItem">
                 <li class="{f:if(condition: mainnavigationItem.active, then:'active')} ">
-                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}" class="{f:if(condition: mainnavigationItem.active, then:'active')} ">
                 {mainnavigationItem.title}
             </a>
                     <f:if condition="{mainnavigationItem.children}">

@@ -152,7 +152,7 @@ page {
       materialize.external = 1
       fontOne = https://fonts.googleapis.com/css?family=Arapey|Roboto
       fontOne.external = 1
-      fontTwo = https://fonts.googleapis.com/css?family=Montserrat
+      fontTwo = https://fonts.googleapis.com/css?family=Montserrat:400,600
       fontTwo.external = 1
     }
 
@@ -219,6 +219,8 @@ config {
     concatenateJs = 0
     concatenateCss = 0
 }
+
+
 
 //plugin.tx_form.settings.yamlConfigurations.100 = EXT:pianopeople/Configuration/Yaml/CustomFormSetup.yaml
 //module.tx_form.settings.yamlConfigurations.100 = EXT:pianopeople/Configuration/Yaml/CustomFormSetup.yaml

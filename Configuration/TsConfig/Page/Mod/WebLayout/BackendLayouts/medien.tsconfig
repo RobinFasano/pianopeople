@@ -15,15 +15,15 @@ mod {
                                 columns {
                                     1 {
                                         name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.titel
-                                        colPos = 0
+                                        colPos = 1
                                     }
                                 }
                             }
                             2 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.inhalt
-                                        colPos = 1
+                                        name = Footer
+                                        colPos = 5
                                     }
                                 }
                             }

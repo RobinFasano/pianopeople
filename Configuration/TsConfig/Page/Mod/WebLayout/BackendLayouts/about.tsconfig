@@ -4,7 +4,7 @@ mod.web_layout.BackendLayouts {
     config {
       backend_layout {
         colCount = 2
-        rowCount = 1
+        rowCount = 2
         rows {
           1 {
             columns {
@@ -15,6 +15,14 @@ mod.web_layout.BackendLayouts {
               2 {
               name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.links
               colPos = 1
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+              name = Footer
+              colPos = 5
               }
             }
           }

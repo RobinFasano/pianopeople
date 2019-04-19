@@ -63,6 +63,20 @@ lib.dynamicContent {
     90 = RESTORE_REGISTER
 }
 
+lib.dynamicContentSlide =< lib.dynamicContent
+lib.dynamicContentSlide.20.slide = -1
+
+lib.headerFooter = CONTENT
+lib.headerFooter {
+  renderObj.stdWrap.wrap = <div class="aniview animated slow" data-av-animation="fadeInUp"><div class="media">|</div></div>
+  table = tt_content
+  select {
+    field = header
+    where = colPos = 5
+    orderBy = pid
+  }
+}
+
 lib.media = CONTENT
 lib.media {
   renderObj.stdWrap.wrap = <div class="aniview animated slow" data-av-animation="fadeInUp"><div class="media video-container">|</div></div>
@@ -103,7 +117,7 @@ lib.headerimage {
     treatIdAsReference = 1
     import.listNum = 0
   }
-  params = id="bg" 
+  params = id="bg"
 }
 
 lib.aboutImg = IMAGE
@@ -117,3 +131,6 @@ lib.aboutImg {
   wrap = <div class="container">|</div>
 
 }
+
+lib.pageTitle = TEXT
+lib.pageTitle.data = page:title
