@@ -10,20 +10,25 @@
             <div class="kontakt">
                 <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
             </div>
-            <div class="row container contact">
+            <div class="contact">
+
+
+            <div class="row container ">
                 <div class="col s12 m6">
                   <div class="map">
-                    <f:cObject typoscriptObjectPath="lib.map"/>
+                    <f:cObject typoscriptObjectPath="lib.googleMap"/>
                   </div>
                 </div>
                     <div class="col s12 m6">
-                        <div class="kontaktdaten">
-                          <div class="aniview animated slow" data-av-animation="fadeInUp">
-                            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}" />
-                        </div>
-                    </div>
+                      <div class="map center-align">
+                        <f:cObject typoscriptObjectPath="lib.map"/>
+                      </div>
                 </div>
             </div>
+            <div class="container center-align" style="">
+              <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '2'}" />
+            </div>
+              </div>
         </div>
     </main>
 </f:section>

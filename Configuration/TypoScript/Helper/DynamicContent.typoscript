@@ -88,8 +88,8 @@ lib.media {
   }
 }
 
-lib.map = CONTENT
-lib.map {
+lib.googleMap = CONTENT
+lib.googleMap {
   renderObj.stdWrap.wrap = <div class="aniview animated slow" data-av-animation="fadeInUp"><div class="video-container">|</div></div>
   table = tt_content
   select {
@@ -129,6 +129,18 @@ lib.aboutImg {
   }
   params = class="responsive-img z-depth-5"
   wrap = <div class="container">|</div>
+
+}
+
+lib.map = IMAGE
+lib.map {
+  file {
+    import.data = levelmedia:-1, slide
+    treatIdAsReference = 1
+    import.listNum = 0
+  }
+  params = class="materialboxed responsive-img"
+  wrap = <div class="aniview animated slow" data-av-animation="fadeInUp">|</div>
 
 }
 

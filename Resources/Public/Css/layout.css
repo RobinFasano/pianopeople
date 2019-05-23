@@ -50,24 +50,29 @@ nav {
     line-height: 80px;
 }
 
+hr {
+  border: 0px;
+  width: 85%;
+  text-align: center;
+  height: 3px;
+  background-color: #bc2818;
+ /*background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/gold2.jpg');*/
+}
+
 nav ul a {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     height: 80px;
 }
-nav ul li {
-  padding-right: 25px;
-  padding-left: 25px;
 
+nav ul li {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 nav ul a:hover {
     background-color: rgba(0, 0, 0, 0) !important;
 }
-/*
-nav ul a.active{
-  border-bottom: 2px solid black;
-}*/
 
 nav ul li.active {
     background-color: rgba(0, 0, 0, 0) !important;
@@ -85,10 +90,10 @@ nav ul a:after {
   bottom: 0;
   content: "";
   display: block;
-  height: 2.5px;
+  height: 3.5px;
   left: 50%;
   position: absolute;
-  background: #343435;
+  background: #bc2818;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -156,13 +161,13 @@ nav {
 }
 
 input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #343435;
-    -webkit-box-shadow: 0 1px 0 0 #343435;
-    box-shadow: 0 1px 0 0 #343435;
+    border-bottom: 1px solid #d5b35b;
+    -webkit-box-shadow: 0 1px 0 0 #d5b35b;
+    box-shadow: 0 1px 0 0 #d5b35b;
 }
 
 input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-default):focus:not([readonly])+label, input[type=password]:not(.browser-default):focus:not([readonly])+label, input[type=email]:not(.browser-default):focus:not([readonly])+label, input[type=url]:not(.browser-default):focus:not([readonly])+label, input[type=time]:not(.browser-default):focus:not([readonly])+label, input[type=date]:not(.browser-default):focus:not([readonly])+label, input[type=datetime]:not(.browser-default):focus:not([readonly])+label, input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label, input[type=tel]:not(.browser-default):focus:not([readonly])+label, input[type=number]:not(.browser-default):focus:not([readonly])+label, input[type=search]:not(.browser-default):focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #343435;
+    color: #d5b35b;
 }
 
 .map {
@@ -339,12 +344,22 @@ a.button2:active {
 .contact{
     margin-bottom:100px;
 }
+footer{
+  border-top: 5px solid #d5b35b;
+}
 .footer-copyright{
   margin-bottom: 50px;
 }
 
 .icons{
   margin: 15px;
+}
+
+@media only screen and (max-width: 1163px) {
+  nav ul li {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -358,6 +373,10 @@ a.button2:active {
     .nav-wrapper {
         min-height: 0px !important;
         height: auto;
+    }
+    nav ul li {
+      padding-right: 15px;
+      padding-left: 15px;
     }
 }
 
@@ -420,6 +439,10 @@ a.button2:active {
     .kontaktdaten {
         width: 68%;
         margin: auto;
+    }
+    nav ul li {
+      padding-right: 15px;
+      padding-left: 15px;
     }
 }
 
