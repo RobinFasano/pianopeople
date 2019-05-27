@@ -1,12 +1,14 @@
 body, html {
     height: 100%;
+    margin: 0;
 }
 
 /* The hero image */
 
 .hero-image {
-    /* Full height */
-    height: 100%;
+    background-image: url("piano2.png");  
+  /*Full height */
+  height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -207,6 +209,7 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 }
 .news-list-date{
 }
+/*
 #bg {
     position: fixed;
     top: 0;
@@ -214,11 +217,10 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     /* Preserve aspet ratio
   min-width: 100%;
   max-height: auto;
-  */
+
     min-width: 100%;
     min-height: 100%;
-}
-
+}*/
 .caption {
     background-color: transparent;
     position: absolute;
