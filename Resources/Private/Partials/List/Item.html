@@ -13,7 +13,7 @@
 	</div>
 
 	<p style="font-weight: bold;">
-		<div class="row" style="width:400px;">
+		<div class="row" style="max-width:500px;">
 			<span class="news-list-date">
 			<time itemprop="datePublished" datetime="{f:format.date(date:newsItem.datetime, format:'Y-m-d')}">
 					<div class="col s3 datetime">
@@ -22,7 +22,7 @@
 					<div class="col s3 datetime">
 						<f:format.date format="H:i">{newsItem.datetime}</f:format.date>
 					</div>
-					<div class="col s3 datetime">
+					<div class="col s6 location">
 						<f:format.raw>{newsItem.teaser}</f:format.raw>
 					</div>
 				</time>

@@ -6,7 +6,7 @@ body, html {
 /* The hero image */
 
 .hero-image {
-    background-image: url("piano2.png");  
+    background-image: url("piano2.png");
   /*Full height */
   height: 100%;
     /* Center and scale the image nicely */
@@ -205,22 +205,14 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 .datetime{
   font-size: 18px;
   font-weight: bold;
-  margin-right: 15px;
 }
-.news-list-date{
-}
-/*
-#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* Preserve aspet ratio
-  min-width: 100%;
-  max-height: auto;
 
-    min-width: 100%;
-    min-height: 100%;
-}*/
+
+.location {
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .caption {
     background-color: transparent;
     position: absolute;
