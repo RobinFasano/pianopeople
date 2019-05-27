@@ -9,17 +9,25 @@ mod {
                 config {
                     backend_layout {
                         colCount = 1
-                        rowCount = 2
+                        rowCount = 3
                         rows {
                             1 {
                                 columns {
                                     1 {
-                                        name = LLL:EXT:pianopeople/Resources/Private/Language/locallang_be.xlf:backend_layout.column.titel
+                                        name = sound
                                         colPos = 1
                                     }
                                 }
                             }
                             2 {
+                                columns {
+                                    1 {
+                                        name = musikvideos
+                                        colPos = 2
+                                    }
+                                }
+                            }
+                            3 {
                                 columns {
                                     1 {
                                         name = Footer
