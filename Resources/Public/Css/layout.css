@@ -6,8 +6,9 @@ body, html {
 /* The hero image */
 
 .hero-image {
-    background-image: url("piano2.png");
-    /*Full height */
+    background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
+    /*
+    Full height */
     height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
@@ -448,5 +449,45 @@ footer {
   }
   .caption{
     width: 70%;
+  }
+  .button-white {
+      background-color: none;
+      /* Green */
+      border: 0.16em solid white;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 13px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+  }
+}
+
+@media only screen and (max-width:400px) {
+
+  .landing-container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .caption{
+    width: 80%;
+  }
+  .button-white {
+      background-color: none;
+      /* Green */
+      border: 0.16em solid white;
+      color: white;
+      padding: 10px 27px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
   }
 }

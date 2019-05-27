@@ -117,7 +117,7 @@ lib.headerimage {
     treatIdAsReference = 1
     import.listNum = 0
   }
-  params = class=""
+  params = class="hero-image"
 }
 
 lib.aboutImg = IMAGE
