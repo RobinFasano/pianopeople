@@ -7,8 +7,8 @@ body, html {
 
 .hero-image {
     background-image: url("piano2.png");
-  /*Full height */
-  height: 100%;
+    /*Full height */
+    height: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -53,12 +53,12 @@ nav {
 }
 
 hr {
-  border: 0px;
-  width: 85%;
-  text-align: center;
-  height: 3px;
-  background-color: #bc2818;
- /*background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/gold2.jpg');*/
+    border: 0px;
+    width: 85%;
+    text-align: center;
+    height: 3px;
+    background-color: #bc2818;
+    /*background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/gold2.jpg');*/
 }
 
 nav ul a {
@@ -68,8 +68,8 @@ nav ul a {
 }
 
 nav ul li {
-  padding-right: 40px;
-  padding-left: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 nav ul a:hover {
@@ -79,29 +79,31 @@ nav ul a:hover {
 nav ul li.active {
     background-color: rgba(0, 0, 0, 0) !important;
 }
-nav ul a {
-  color: #343435;
-  text-decoration: none;
-  display: inline-block;
-  position: relative;
-  padding: 15px 10px;
 
+nav ul a {
+    color: #343435;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 10px;
 }
+
 nav ul a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 3.5px;
-  left: 50%;
-  position: absolute;
-  background: #bc2818;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3.5px;
+    left: 50%;
+    position: absolute;
+    background: #bc2818;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
+
 nav ul a:hover:after {
-  width: 100%;
-  left: 0;
+    width: 100%;
+    left: 0;
 }
 
 .jumbotron {
@@ -118,18 +120,6 @@ nav ul a:hover:after {
     margin-bottom: 35px;
 }
 
-.custom-brand-logo {}
-
-.parallax-img {
-    width: auto;
-    height: 2000px;
-    opacity: 0.1;
-}
-
-.parallax-container {
-    max-height: 2000px !important;
-}
-
 .floating {
     position: relative;
     width: 500px;
@@ -138,12 +128,14 @@ nav ul a:hover:after {
 .caption {
     margin: -50px auto;
     max-height: 700px;
-    width: 80%;
     background-color: white;
-    padding: 10px;
-    /*position: absolute;
-*/
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    text-align: center;
 }
+
 
 .item {
     width: 200px;
@@ -202,24 +194,15 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
     margin-bottom: 40px;
     background-color: ;
 }
-.datetime{
-  font-size: 18px;
-  font-weight: bold;
-}
 
+.datetime {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .location {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.caption {
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    top: 35%;
-    text-align: center;
-    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .aboutimg {
@@ -244,8 +227,6 @@ nav.nav-center ul li {
 nav.nav-center ul li a {
     display: inline-block;
 }
-
-
 
 .fast {
     -vendor-animation-duration: 1s;
@@ -335,25 +316,28 @@ a.button2:active {
     /* Green */
     color: #343435;
 }
-.contact{
-    margin-bottom:100px;
-}
-footer{
-  border-top: 5px solid #d5b35b;
-}
-.footer-copyright{
-  margin-bottom: 50px;
+
+.contact {
+    margin-bottom: 100px;
 }
 
-.icons{
-  margin: 15px;
+footer {
+    border-top: 5px solid #d5b35b;
+}
+
+.footer-copyright {
+    margin-bottom: 50px;
+}
+
+.icons {
+    margin: 15px;
 }
 
 @media only screen and (max-width: 1163px) {
-  nav ul li {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+    nav ul li {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -369,8 +353,8 @@ footer{
         height: auto;
     }
     nav ul li {
-      padding-right: 15px;
-      padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
@@ -378,15 +362,13 @@ footer{
     h1, h2 {
         font-size: 60px;
     }
-
-        .kontaktdaten {
-            width: 90%;
-            margin: auto;
-        }
-
-            .logo-small {
-                margin-left: -40px;
-            }
+    .kontaktdaten {
+        width: 90%;
+        margin: auto;
+    }
+    .logo-small {
+        margin-left: -40px;
+    }
 }
 
 @media only screen and (max-width: 598px) {
@@ -397,19 +379,18 @@ footer{
         margin-top: 80px;
         margin-bottom: 80px;
     }
-    .map{
+    .map {
         margin-bottom: 50px;
         margin-left: auto;
         margin-right: auto;
     }
-    .contact{
-        margin-bottom:80px;
+    .contact {
+        margin-bottom: 80px;
     }
     .kontaktdaten {
         width: 40%;
         margin: auto;
     }
-
 }
 
 @media only screen and (max-width: 572px) {
@@ -435,8 +416,8 @@ footer{
         margin: auto;
     }
     nav ul li {
-      padding-right: 15px;
-      padding-left: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 }
 
@@ -456,5 +437,16 @@ footer{
         color: #343435;
     }
 
+}
 
+@media only screen and (max-width:700px) {
+
+  .landing-container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .caption{
+    width: 70%;
+  }
 }
