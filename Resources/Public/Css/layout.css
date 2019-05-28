@@ -2,8 +2,13 @@ body, html {
     height: 100%;
     margin: 0;
 }
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 main{
-
+flex: 1 0 auto;
   background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
 /*  position: relative;
 
