@@ -1,6 +1,6 @@
 
 renderingOptions:
-  submitButtonLabel: Submit
+  submitButtonLabel: Senden
 type: Form
 identifier: kontakt
 label: Kontakt
