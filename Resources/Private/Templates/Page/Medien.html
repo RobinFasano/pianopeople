@@ -1,15 +1,17 @@
 <f:layout name="Default" />
 <f:section name="Main">
-        <div class="container title">
-            <div class="aniview slow" data-av-animation="slideInLeft">
-                <h1>{data.title}</h1>
-                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
-            </div>
+  <div class="main">
+    <div class="container title">
+        <div class="aniview slow" data-av-animation="slideInLeft">
+            <h1>{data.title}</h1>
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
         </div>
-        <div class="container media-container">
-          <div class="aniview animated slow" data-av-animation="fadeInUp">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
-          </div>
-            <f:cObject typoscriptObjectPath="lib.media"/>
-        </div>
+    </div>
+    <div class="container media-container">
+      <div class="aniview animated slow" data-av-animation="fadeInUp">
+        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}" />
+      </div>
+        <f:cObject typoscriptObjectPath="lib.media"/>
+    </div>
+  </div>
 </f:section>

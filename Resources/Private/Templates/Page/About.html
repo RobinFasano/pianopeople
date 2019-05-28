@@ -1,26 +1,28 @@
 <f:layout name="Default" />
 <f:section name="Main">
-        <div class="container row">
-            <div class="aniview animated slow" data-av-animation="fadeInLeft">
-                <div class="col s12 m6">
-                    <div class=" title  ">
-                        <h1 class="">{data.title}</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container row">
-                <div class="col s12 m6">
-                  <div class="aniview animated slow" data-av-animation="fadeInUp">
-                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
-                </div>
-            </div>
+  <div class="main">
+    <div class="container row">
+        <div class="aniview animated slow" data-av-animation="fadeInLeft">
             <div class="col s12 m6">
-                <div class="aniview animated slow" data-av-animation="slideInDown">
-                    <div class="aboutimg">
-                        <f:cObject typoscriptObjectPath="lib.aboutImg" />
-                    </div>
+                <div class=" title  ">
+                    <h1 class="">{data.title}</h1>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container row">
+            <div class="col s12 m6">
+              <div class="aniview animated slow" data-av-animation="fadeInUp">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}" />
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="aniview animated slow" data-av-animation="slideInDown">
+                <div class="aboutimg">
+                    <f:cObject typoscriptObjectPath="lib.aboutImg" />
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 </f:section>
