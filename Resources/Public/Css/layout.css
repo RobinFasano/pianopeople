@@ -2,20 +2,22 @@ body, html {
     height: 100%;
     margin: 0;
 }
+main{
 
+  background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
+/*  position: relative;
+
+  Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* The hero image */
 
 .hero-image {
-    /*
-    background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
-    position: relative;
 
-    Full height */
-    height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* Place text in the middle of the image */
