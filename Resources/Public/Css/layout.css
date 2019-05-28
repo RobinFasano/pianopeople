@@ -6,8 +6,10 @@ body, html {
 /* The hero image */
 
 .hero-image {
-    background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
     /*
+    background-image:url('/typo3conf/ext/pianopeople/Resources/Public/Images/Logos/piano2.png');
+    position: relative;
+
     Full height */
     height: 100%;
     /* Center and scale the image nicely */
@@ -38,12 +40,12 @@ main {
     flex: 1 0 auto;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Arapey', serif;
     font-size: 90px;
 }
 
-header, h3, .headline {
+header, h3, .headline, h2 {
     font-family: 'Arapey', serif;
     font-size: 40px;
 }
@@ -277,7 +279,7 @@ a.button2:active {
 }
 
 .button {
-    background-color: none;
+    background-color: white;
     /* Green */
     border: 0.16em solid #343435;
     color: #343435;
@@ -290,7 +292,10 @@ a.button2:active {
     /* Safari */
     transition-duration: 0.4s;
 }
-
+button:focus {
+  outline: none;
+  background-color: white !important;
+}
 .button:hover {
     background-color: #343435;
     /* Green */

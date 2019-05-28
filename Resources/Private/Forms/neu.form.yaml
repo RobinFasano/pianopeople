@@ -5,6 +5,27 @@ type: Form
 identifier: neu
 label: neu
 prototypeName: standard
+finishers:
+  -
+    options:
+      subject: '{text-1}'
+      recipientAddress: '{email-1}'
+      recipientName: ''
+      senderAddress: '{email-1}'
+      senderName: ''
+      replyToAddress: ''
+      carbonCopyAddress: ''
+      blindCarbonCopyAddress: ''
+      format: html
+      attachUploads: true
+      translation:
+        language: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      message: test
+      contentElementUid: ''
+    identifier: Confirmation
 renderables:
   -
     renderingOptions:

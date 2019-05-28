@@ -83,7 +83,7 @@ lib.media {
   table = tt_content
   select {
     pidInList.cObject < lib.allPid
-    where = colPos = 1
+    where = colPos = 2
     orderBy = pid
   }
 }
